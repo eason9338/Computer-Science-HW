@@ -6,7 +6,7 @@ class Test{
 
         int output = sc.nextInt();
 
-        System.out.println(output);
+        System.out.println("Your input is: " + output);
         sc.close();
     }
 }
