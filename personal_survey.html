@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		h1, em{
+			font-weight: bolder;
+			font-family: serif;
+			color: darkblue;
+			text-align: center;
+		}
+
+		h3, em{
+			font-weight: bold;
+			font-family: serif;
+			text-decoration: underline;
+			display: inline;
+			color: red;
+		}
+
+		.font_style{
+			font-family: serif;
+			text-align: left;
+			color: black;
+		}
+		.title font_style{
+			text-align: inherit;
+			color: inherit;
+		}
+	</style>
+</head>
+<body>
+	<div class = "font_style">
+	<table border = "8">
+		<form method = "post">
+			<tr>
+				<th colspan =  "3"><h1>About - 111306020</h1>
+				</th>
+			</tr>
+			<tr>
+				<td rowspan = "3">
+					<img src = "photo.jpg" alt = "my_photo" width = "100" height = "140">
+					<p><label>My personal photo</label></p>
+				</td>
+				<td colspan = "2">
+					
+						<p><label><h3><em>Name: </em></h3>
+							<input name = "name" type = "text" size = "25" maxlength = "30">
+						</label></p>
+						<p><label><h3><em>Gender: </em></h3>
+							<input type = "radio" name = "gender" value = "male">Male 
+							<input type = "radio" name = "gender" value = "female">Female
+							<input type = "radio" name = "gender" value = "other">Other
+						</label></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p><label>Country: 
+						<select name = "country">
+							<option value = "taipei">Taipei</option>
+							<option value = "newTaipei">New Taipei</option>
+							<option value = "taoyuang">Taoyuang</option>
+							<option value = "taichung">Taichung</option>
+							<option value = "tainan">Tainan</option>
+							<option value = "kaohsiung">Kaosiung</option>
+							<option value = "other">Others</option>
+						</select>
+					</label></p>
+				</td>
+				<td>
+					<p><label>Birthday: 
+						<input type = "date" name = "date">
+					</label></p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p><label>E-mail: 
+						<input name = "text" type = "text" size = "30" maxlength = "60" placeholder = "name@domain.com">
+					</label></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p><label><div class = "title" style = "text-align: center;color: blue;">Hobby</div></label></p>
+				</td>
+				<td colspan="2">
+					<input type = "checkbox" name = "hobby" value = "swim">Swimming
+					<input type = "checkbox" name = "hobby" value = "badminton">Badminton
+					<input type = "checkbox" name = "hobby" value = "movie">Movie
+					<input type = "checkbox" name = "hobby" value = "game">Game
+					<input type = "checkbox" name = "hobby" value = "painting">Painting
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p><label><div class = "title" style = "text-align: center;color: blue;">Skill</div></label></p>
+				</td>
+				<td colspan="2">
+					<input type = "checkbox" name = "skill" value = "java">Java
+					<input type = "checkbox" name = "skill" value = "html">HTML
+					<input type = "checkbox" name = "skill" value = "python">Python
+					<input type = "checkbox" name = "skill" value = "gamedev">Game Development
+					<input type = "checkbox" name = "skill" value = "premiere">Premiere
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p><label><div class = "title" style = "text-align: center;color: blue;">Say Something</div></label></p>
+				</td>
+				<td colspan="2">
+					<input type = "text" name = "text" size = "50" maxlength = "50" placeholder = "Say something to me">
+				</td>
+			</tr>
+			<tr>
+				<td colspan = "3">
+					<input type = "submit" value = "提交">
+					<input type = "reset" value = "重設">
+				</td>
+			</tr>
+		</form>
+	</table>
+
+	<a href="file:///Users/akira/HTML/Lab2.html">Input Type Demo</a>
+	</div>
+</body>
+</html>
