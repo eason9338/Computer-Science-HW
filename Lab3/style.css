@@ -1,0 +1,96 @@
+h1, em{
+	font-weight: bolder;
+	font-family: serif;
+	color: darkblue;
+	text-align: center;
+	text-decoration: underline;
+	font-size: x-large;
+}
+
+h3, em{
+	font-weight: bold;
+	font-family: serif;
+	display: inline;
+	color: red;
+	background-color: lightgrey;
+}
+
+h2, em{
+	font-size: 15pt;
+	font-style: italic;
+}
+
+
+.intro {
+	background-color: yellow;
+}
+
+.font_style {
+	font-family : serif;
+	color: black;
+	font-weight : bold;
+}
+
+.extra font_style{
+	color: inherit;
+}
+
+.shiftright {
+	position: relative;
+	right: -5ex;
+}
+
+.text {
+	position: absolute;
+	z-index:1;
+}
+
+.border {
+	border: 1px solid black;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 0px;
+	margin-left:0px;
+	background-color: lightblue;
+}
+
+.floated {
+	background-color: LightGrey;
+	font-size: 1.5em;
+	font-family: arial, sans-serif;
+	padding: .2em;
+	margin-left: .5em;
+	margin-bottom: .5em;
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+body {
+			background-image: url("background.webp");
+}
+
+.picture {
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left:80px;
+
+	border: 1px solid black;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-right: 150px;
+	margin-left: 80px;
+	background-color: lightblue;
+
+	float: right;
+	margin: 0 0 10px 10px;
+}
+
+
+
+
+
+
+
+
