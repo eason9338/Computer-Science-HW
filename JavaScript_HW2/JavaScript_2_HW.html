@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style>
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2 em>JS Calculator</h2>
+	<h4>Number 1</h4>
+	<input type = "text" id = "firstNum" style="width: 20em;">
+	
+	<p></p>
+	<h4>Number 2</h4>
+	<input type = "text" id = "secondNum" style = "width: 20em;">
+	
+	<p></p>
+	<h4>Operating way?</h4>
+	<form action = "#">
+		<label for = "operation"></label>
+		<select name = "operation" id = "operation" style = "width: 20em;">
+			<option value = "plus">+</option>
+			<option value = "minus">-</option>
+			<option value = "times">*</option>
+			<option value = "divide">/</option>
+		</select>
+		<br></br>
+		<input type = "button" id = "Calculate" value = "Submit">
+	</form>
+
+	<h4 id = "answer"></h4>
+
+	<script>
+		
+		function Start(){
+			var button = document.getElementById("Calculate");
+			button.addEventListener("click", Calculate, false);
+		}
+
+		function Calculate(){
+			var firstNum = parseFloat(document.getElementById("firstNum").value);
+			var secondNum = parseFloat(document.getElementById("secondNum").value);
+			var operation = document.getElementById("operation").value;
+
+			var answer;
+
+			switch(operation){
+			case "plus":
+				answer = firstNum + secondNum;
+				break;
+			case "minus":
+				answer = firstNum - secondNum;
+				break;
+			case "times":
+				answer = firstNum * secondNum;
+				break;
+			case "divide":
+				answer = firstNum / secondNum;
+				break;
+			}
+
+			document.getElementById("answer").innerHTML = answer;
+			console.log(firstNum);
+			console.log(secondNum);
+			console.log(operation);
+		}
+		
+		window.addEventListener("load", Start, false);
+
+	</script>
+
+
+</body>
+</html>
